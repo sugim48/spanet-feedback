@@ -1,0 +1,33 @@
+name: Feature request or feedback / 改善要望・フィードバック
+description: Suggest an improvement, request a feature, or share other feedback. / 改善案、機能要望、その他のご意見をお寄せください。
+title: "[Feedback] "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for your feedback. English and Japanese are both welcome.
+        フィードバックありがとうございます。日本語・英語のどちらでも投稿できます。
+
+  - type: textarea
+    id: suggestion
+    attributes:
+      label: Suggestion or feedback / ご意見・ご要望
+      description: Tell us what you would like to see changed, added, or improved. / 変更してほしい点、追加してほしい機能、改善案などを教えてください。
+    validations:
+      required: true
+
+  - type: textarea
+    id: reason
+    attributes:
+      label: Why would this be useful? / どのような点で役立ちますか？
+      description: If applicable, describe the problem this would solve or why it would improve the experience. / もしあれば、解決したい問題や、改善によって良くなる点を教えてください。
+    validations:
+      required: false
+
+  - type: textarea
+    id: additional-context
+    attributes:
+      label: Additional context / その他の情報
+      description: Add screenshots, examples, or anything else that may help. You can drag and drop images here. / スクリーンショットや具体例など、参考になる情報があれば記載してください。画像もドラッグ＆ドロップできます。
+    validations:
+      required: false
