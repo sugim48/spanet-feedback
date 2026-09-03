@@ -1,0 +1,46 @@
+name: Bug report / バグ報告
+description: Report a problem or unexpected behavior. / 不具合や予期しない動作を報告します。
+title: "[Bug] "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for reporting a bug. English and Japanese are both welcome.
+        バグ報告ありがとうございます。日本語・英語のどちらでも投稿できます。
+
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened? / 何が起きましたか？
+      description: Describe the problem and what you expected to happen. / 発生した問題と、本来どうなると期待していたかを教えてください。
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce / 再現手順
+      description: If possible, tell us how to reproduce the problem. / 可能であれば、問題を再現する手順を教えてください。
+      placeholder: |
+        1. ...
+        2. ...
+        3. ...
+    validations:
+      required: false
+
+  - type: input
+    id: page
+    attributes:
+      label: Page URL / ページURL
+      description: Paste the URL of the page where the problem occurred, if applicable. / 該当する場合、問題が発生したページのURLを貼ってください。
+      placeholder: https://...
+    validations:
+      required: false
+
+  - type: textarea
+    id: additional-context
+    attributes:
+      label: Additional context / その他の情報
+      description: Screenshots, browser information, or anything else that may help. You can drag and drop images here. / スクリーンショット、ブラウザ情報など、参考になる情報があれば記載してください。画像もドラッグ＆ドロップできます。
+    validations:
+      required: false
